@@ -1,0 +1,65 @@
+// basic
+@import "./scss/basic.scss";
+
+// header
+@import "./scss/header.scss";
+
+// section-one
+@import "./scss/section-one.scss";
+
+// section-two
+@import "./scss/section-two.scss";
+
+// section-three
+@import "./scss/section-three.scss";
+
+// section-four
+@import "./scss/section-four.scss";
+
+// Секция 5 Awards / Секция 6 Portfolio / Секция 7 Services / Секция 8 Happy Customer/ Секция 9 Articles
+.section-five, .section-six, .section-seven, .section-eight, .section-nine{
+    &__holder {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 22px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    &__holder-h2 {
+        font-size: 45px;
+        line-height: 56px;
+        letter-spacing: 1.44px;
+    }
+    &__holder-p {
+        font-size: 18px;
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: 1.44px;
+        text-transform: uppercase;
+    }
+}
+
+// section-five
+@import "./scss/section-five.scss";
+
+// section-six
+@import "./scss/section-six.scss";
+
+// section-seven
+@import "./scss/section-seven.scss";
+
+// section-eight
+@import "./scss/section-eight.scss";
+
+// section-nine
+@import "./scss/section-nine.scss";
+
+// section-ten
+@import "./scss/section-ten.scss";
+
+// footer
+@import "./scss/footer.scss";
+
+// Animation
+@import "./scss/animation.scss";

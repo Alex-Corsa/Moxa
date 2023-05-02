@@ -1,0 +1,27 @@
+// Секция 7
+.section-seven {
+    &__block {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    &__item {
+        border: 1px solid;
+    }
+    &__box-h3 {
+        padding-top: 34px;
+        padding-right: 10px;
+        padding-left: 34px;
+    }
+    &__h3 {
+        font-size: 31px;
+        line-height: 40px;
+        letter-spacing: 0.64px;
+    }
+    &__box-p {
+        padding: 28px 49px 30px 34px;
+    }
+    &__p {font-size: 18px;
+    line-height: 32px;
+    }
+}

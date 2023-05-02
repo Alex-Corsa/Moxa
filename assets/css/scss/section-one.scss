@@ -1,0 +1,72 @@
+// Секция 1
+.section-one {
+    &__block_flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 44px;
+    }
+    &__box_flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 32px;
+        flex: 0 1 675px;
+    }
+    &__box-text {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+    &__box-h1 {
+        max-width: 650px;
+    }
+    &__h1 {
+        font-size: 56px;
+        line-height: 64px;
+        letter-spacing: 0.56px;
+    }
+    &__span-text {
+        font-size: 23px;
+        line-height: 32px;
+        letter-spacing: 0.48px;
+    }
+    &__button {
+        padding: 13px 33px;
+        cursor: pointer;
+    }
+    &__black-btn {
+        background-color: $color_black;
+        color: $color_whith;
+    }
+    &__black-whith {
+        background-color: $color_whith;
+        color: $color_black;
+    }
+    &__box-img {
+        max-width: 563px;
+    }
+    &__userpic-img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section-one {
+        &__block_flex {
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+        &__box_flex {
+            text-align: start;
+            align-content: center;
+            justify-content: flex-start;
+        }
+        &__box-text {
+            justify-content: start;
+        }
+    }
+}

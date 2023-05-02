@@ -1,0 +1,90 @@
+// Секция 3
+.section-three {
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+    &__box_flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+    }
+    &__box-line_flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    &__box-span {
+        flex: 1 0 auto;
+    }
+    &__span {
+        font-size: 23px;
+        line-height: 32px;
+        letter-spacing: 0.48px;
+    }
+    &__h2 {
+        font-size: 56px;
+        line-height: 64px;
+        letter-spacing: 0.56px;
+    }
+    &__box-text {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    &__box-p1 {
+        font-size: 31px;
+        line-height: 40px;
+        letter-spacing: 0.64px;
+    }
+    &__box-p2 {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    &__block-info {
+        display: flex;
+        gap: 80px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+    }
+    &__span-top {
+        font-size: 12px;
+        line-height: 16px;
+        color: $color_red;
+    }
+    &__span-botton {
+        font-size: 23px;
+        line-height: 32px;
+        letter-spacing: 0.48px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .section-three {
+        &__wrap {
+            flex-wrap: nowrap;
+        }
+        &__box_flex {
+            flex: 0 1 40%;
+        }
+        &__box {
+            flex: 0 1 60%;
+        }
+        &__block-info {
+            flex-wrap: nowrap;
+            gap: 50px;
+        }
+    }
+}

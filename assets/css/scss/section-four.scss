@@ -1,0 +1,33 @@
+// Секция 4
+.section-four {
+    &__block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    &__inner {
+        flex: 0 1 352px;
+        border: 1px solid black;
+    }
+    &__inner:nth-child(2) {
+        background-color: #161513;
+        color: #dfcfcf;
+    }
+    &__h3 {
+        font-size: 56px;
+        line-height: 64px;
+    }
+    &__p {
+        font-size: 16px;
+        line-height: 32px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .section-four {
+        &__block {
+            flex-wrap: nowrap;
+        }
+    }
+}

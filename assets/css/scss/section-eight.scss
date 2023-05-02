@@ -1,0 +1,16 @@
+//section-eight
+.section-eight {
+    &__block {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 241px);
+        justify-content: center;
+        gap: 32px;
+    }
+    &__item {
+        height: 98px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid;
+    }
+}

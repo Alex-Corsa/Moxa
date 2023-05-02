@@ -1,0 +1,62 @@
+// Секция 5
+.section-five {
+    &__block {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    &__item {
+        padding: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+    }
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+    &__num {
+        display: inline-flex;
+        background-color: $color_red;
+        width: 48px;
+        height: 48px;
+        align-items: center;
+        justify-content: center;
+    }
+    &__box-text {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    &__item-text {
+        max-width: 120px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .section-five {
+        &__item {
+            justify-content: space-between;
+            flex-direction: row;
+        }
+        &__inner {
+            flex-direction: row;
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .section-five {
+        &__item-text {
+            max-width: none;
+        }
+    }
+}

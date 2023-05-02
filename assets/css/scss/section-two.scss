@@ -1,0 +1,38 @@
+// Секция 2
+.section-two {
+    &__box-line_flex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: black;
+        color: white;
+    }
+    &__item_flex {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .section-two {
+        &__box-line_flex {
+            flex-direction: row;
+            transform: rotate(-10deg);
+            animation: planning 10S linear infinite normal .5s;
+        }
+    }
+    @keyframes planning {
+        0% {
+            transform: rotate(-10deg);
+        }
+        50% {
+            transform: rotate(10deg);
+        }
+        100% {
+            transform: rotate(-10deg);
+        }
+    }
+}
